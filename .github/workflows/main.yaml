@@ -1,0 +1,29 @@
+# Run tests in folder tests whenever code is pushed
+name: Code Checks
+on: push 
+jobs:
+
+  tests:
+    # Setup where to run test
+    name: Check Python ${{ matrix.python-version }} on ${{ matrix.runs-on }}
+    runs-on: ${{ matrix.runs-on }}
+    continue-on-error: ${{ matrix.allow_failure }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11"] # Versions to check
+        runs-on: ['ubuntu-latest'] # Platforms to check
+        allow_failure: [false]
+
+    # Install dependencies and run tests
+    steps:
+      # Actions are github's predefined task
+      # View on https://github.com/marketplace/actions/checkout
+      # @vX uses version X of the action
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: pip install .[test]
+    - run: coverage run -m pytest
+    - run: coverage report --show-missing

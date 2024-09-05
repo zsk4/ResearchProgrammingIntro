@@ -1,0 +1,29 @@
+# Configuration file for tests to run before commiting
+
+repos:
+  # Basic pre-commit tasks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v4.6.0"
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+
+  # Ruff, a python linter and formatter
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.5.4
+    hooks:
+      - id: ruff
+        types_or: [ python, pyi, jupyter ]
+        args: [ --fix ]
+      - id: ruff-format
+        types_or: [ python, pyi, jupyter ]
+
+  # MyPy, a python static type checker
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: "v1.11.0"
+    hooks:
+      - id: mypy
+        files: src
+        
