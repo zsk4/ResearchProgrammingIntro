@@ -13,7 +13,7 @@ in_box
 
 import shapely.geometry
 
-class BountingBox:
+class BoundingBox:
     """Rectangular bounding box given by its four corners."""
 
     def __init__(self, box: list[tuple]) -> None:
