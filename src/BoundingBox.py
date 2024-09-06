@@ -1,5 +1,5 @@
 """
-Test if points are in a given bounding box using shapely.
+Test if points are in a given bounding polygon using shapely.
 
 Zachary Katz
 zachary_katz@mines.edu
@@ -7,26 +7,28 @@ September 2024
 
 Functions
 ---------
-in_box
-    Return true if point is in box
+inPolygon
+    Return true if point is in polygon.
 """
 
 import shapely.geometry
 
-class BoundingBox:
+class BoundingPolygon:
     """Rectangular bounding box given by its four corners."""
 
     def __init__(self, box: list[tuple]) -> None:
-        """Initialize a bounding box.
+        """Initialize a bounding polygon.
 
         Parameters
         ----------
         box : list[tuple]
-            List of four tuples representing the four corners of the box.
+            List of tuples representing the vertices of the polygon.
+            The last vertex should be the same as the first.
         """
+        assert box[0] == box[-1], "First and last vertices must be the same."
         self.box = shapely.geometry.Polygon(box)
 
-    def in_box(self, points: list[tuple]) -> list[bool]:
+    def inPolygon(self, points: list[tuple]) -> list[bool]:
         """Determine if points are in the bounding box.
 
         Parameters
