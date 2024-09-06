@@ -13,6 +13,7 @@ inPolygon
 
 import shapely.geometry
 
+
 class BoundingPolygon:
     """Rectangular bounding box given by its four corners."""
 
