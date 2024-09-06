@@ -42,4 +42,4 @@ class BoundingPolygon:
         list[bool]
             List of bools, true if point is in box.
         """
-        return self.box.contains(shapely.geometry.Point(points))
+        return self.box.contains(shapely.geometry.Points(points))
