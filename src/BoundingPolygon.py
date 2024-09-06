@@ -8,7 +8,7 @@ September 2024
 Functions
 ---------
 inPolygon
-    Return true if point is in polygon.
+    Return true if point is in polygon, not including the boundary.
 """
 
 import shapely.geometry
@@ -30,7 +30,7 @@ class BoundingPolygon:
         self.box = shapely.geometry.Polygon(box)
 
     def inPolygon(self, points: list[tuple]) -> list[bool]:
-        """Determine if points are in the bounding box.
+        """Determine if points are in (not on the boundary) of the polygon.
 
         Parameters
         ----------
@@ -42,4 +42,5 @@ class BoundingPolygon:
         list[bool]
             List of bools, true if point is in box.
         """
-        return self.box.contains(shapely.geometry.Points(points))
+        assert len(points) > 0, "List of points must not be empty."
+        return self.box.contains(shapely.points(points))
