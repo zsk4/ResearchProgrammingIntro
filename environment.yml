@@ -1,0 +1,10 @@
+name: ResearchProgrammingIntro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - shapely
+  - conda-forge::pre_commit
+  - ipykernel
+  - conda-forge::matplotlib
+prefix: /home/zkatz/miniconda3/envs/ResearchProgrammingIntro
