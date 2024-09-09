@@ -27,8 +27,9 @@ Why should you take additional time to integrate these tools into your coding pr
 2. ***Readable Code*** These strategies help people better understand how your code works. This has benefits for you (remembering what your script does after not touching it for a while so it can be adapted for a new project), your peers (sharing code that doesn't require your coworker to struggle to understand what it does), reviewers (making data processing for a paper clear), and end users (ease of use of any software your publish).
 
 # Set up your local repository
+1. Create a fork of this repository in your GitHub account.
 
-1. Create a local copy of the repository and create the included conda environment.
+2. Clone a local copy of the repository and create the included conda environment.
 ```
 git clone git@github.com:zsk4/ResearchProgrammingIntro.git
 conda env create -f environment.yml
