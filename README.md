@@ -15,6 +15,7 @@ This repository is based on my experience at INTERSECT Bootcamp 2024 and modules
 2. Clone a local copy of the repository and create the included conda environment (or make sure you have a conda env with the packages in environment.yml).
 ```
 git clone git@github.com:zsk4/ResearchProgrammingIntro.git
+cd ResearchProgrammingIntro
 conda env create -f environment.yml
 conda activate ResearchProgrammingIntro
 ```
