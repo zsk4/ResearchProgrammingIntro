@@ -29,7 +29,7 @@ Why should you take additional time to integrate these tools into your coding pr
 # Set up your local repository
 1. Create a fork of this repository in your GitHub account.
 
-2. Clone a local copy of the repository and create the included conda environment.
+2. Clone a local copy of the repository and create the included conda environment (or make sure you have a conda env with the packages in environment.yml).
 ```
 git clone git@github.com:zsk4/ResearchProgrammingIntro.git
 conda env create -f environment.yml
