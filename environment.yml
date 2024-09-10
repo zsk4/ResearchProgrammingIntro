@@ -1,10 +1,8 @@
-name: ResearchProgrammingIntro
+name: RSE
 channels:
   - conda-forge
-  - defaults
 dependencies:
-  - shapely
-  - conda-forge::pre_commit
-  - ipykernel
-  - conda-forge::matplotlib
-prefix: /home/zkatz/miniconda3/envs/ResearchProgrammingIntro
+  - shapely=2.0
+  - pre_commit=3.8
+  - ipykernel=6.29
+  - matplotlib=3.9

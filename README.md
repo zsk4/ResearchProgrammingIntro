@@ -17,7 +17,7 @@ This repository is based on my experience at INTERSECT Bootcamp 2024 and modules
 git clone https://github.com/zsk4/ResearchProgrammingIntro.git
 cd ResearchProgrammingIntro
 conda env create -f environment.yml
-conda activate ResearchProgrammingIntro
+conda activate RSE
 ```
 2. Install the pre=commit environment
 ```
