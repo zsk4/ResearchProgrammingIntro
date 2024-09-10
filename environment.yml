@@ -1,4 +1,4 @@
-name: ZachsSexyProgrammingIntro_uWu
+name: RSE
 channels:
   - conda-forge
 dependencies:
