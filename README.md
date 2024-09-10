@@ -19,7 +19,7 @@ cd ResearchProgrammingIntro
 conda env create -f environment.yml
 conda activate RSE
 ```
-2. Install the pre=commit environment
+3. Install the pre=commit environment
 ```
 pre-commit install
 ```
