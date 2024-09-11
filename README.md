@@ -1,4 +1,4 @@
-# ResearchProgrammingIntro
+# ResearchProgrammingIntro HELLO FROM CHEMISTRY!!!!
 
 Introduction to some tools and workflows research software engineers use when programming. Hopefully some may be useful to integrate into your own research code.
 
