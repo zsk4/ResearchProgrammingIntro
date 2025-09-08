@@ -34,7 +34,7 @@ pre-commit install
 - Continuous Integration (GitHub Actions)
   - Unit Testing (e.g. PyTest, Coverage)
 
-Additional topics: Project design and structure, documentation, packaging for PyPi, issue tracking, programmer quality of life (terminal personalization, IDEs, etc.)
+Additional topics: Project design and structure, documentation, packaging for PyPi, issue tracking, programmer quality of life (terminal personalization, IDEs, etc.	)
 
 # Why
 Why should you take additional time to integrate these tools into your coding practices?
